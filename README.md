@@ -1,18 +1,15 @@
-AURKB-Inhibitor-Discovery-ML-Framework
-Overview
-This repository hosts the complete computational framework for the identification of high-affinity Aurora Kinase B (AURKB) inhibitors. Our study integrates systematic data curation, multi-modal machine learning (Classical QSAR and Graph Convolutional Neural Networks), and structure-based validation.
+🧬 OverviewThis repository hosts a state-of-the-art computational framework for the identification of high-affinity Aurora Kinase B (AURKB) inhibitors. AURKB is a critical regulator of mitosis, and its overexpression is a hallmark of various oncogenic pathways.This pipeline introduces a dual-layer regulatory approach:Small-Molecule Inhibition: Multi-modal ML screening for $pIC_{50}$ prediction.miRNA Regulation: Integrated analysis of miRNA-mediated gene silencing targeting the AURKB 3' UTR.
+🚀 Key Features
+Multi-Modal Architecture: Merges expert-engineered 2D descriptors (XGBoost/Random Forest) with deep learning Graph Convolutional Networks (GCN) via DeepChem.
 
-Unique to this pipeline is a dual-layer regulatory approach, combining small-molecule protein inhibition with miRNA-mediated gene silencing analysis to propose a synergistic therapeutic strategy against AURKB-overexpressing malignancies.
-Key Features
-Multi-Modal Modeling: Combines expert-engineered 2D descriptors (XGBoost/RF) with deep learning graph representations (GCN).
+Rigorous Reliability: Implements a strict Applicability Domain (AD) filter using Williams plots to eliminate "black-box" predictions.
 
-Strict Applicability Domain (AD): Leverages Williams plot analysis to ensure high-confidence virtual screening results.
+Mechanistic Explainability: Leverages SHAP (SHapley Additive exPlanations) to interpret Structure-Activity Relationships (SAR).
 
-SAR Interpretation: Utilizes SHAP (SHapley Additive exPlanations) for mechanistic insights into structurally-driven activity.
+Structure-Based Validation: Final leads are validated through molecular docking (AutoDock Vina) targeting the ATP-binding pocket of the 4AF3 crystal structure.
 
-Integrated miRNA Analysis: Cross-validated target prediction of microRNA regulators of the AURKB 3' UTR.
-
-Structure-Based Validation: Molecular docking protocols (AutoDock Vina) targeting the 4AF3 ATP-binding pocket.
+📊 Performance Highlights
+To be filled with your specific model results for the manuscript:
 
 Repository Structure
 ├── Notebooks/
@@ -50,6 +47,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 Contact
 Fahad Fardin
+fahad.stu20171@juniv.edu
 Department of Pharmacy
 Jahangirnagar University
 Savar,Dhaka 1342
